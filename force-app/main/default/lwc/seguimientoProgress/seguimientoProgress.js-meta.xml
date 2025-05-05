@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- version -->
+    <apiVersion>62.0</apiVersion>
+
+    <!-- componente es visible en App Builder -->
+    <isExposed>true</isExposed>
+
+
+    <targets>
+
+        <!-- componente expuesto a páginas de registros como Contact, Account, Opportunity, Lead, etc. -->
+        <target>lightning__RecordPage</target>
+
+    </targets>
+
+    <targetConfigs>
+
+        <!-- Limitar componente para un target en Específico-->
+        <targetConfig targets="lightning__RecordPage">
+            <!-- Referenciar objetos -->
+            <objects>
+                <!-- Mostrar solo para contact -->
+                <object>Contact</object>
+            </objects>
+        </targetConfig>
+
+    </targetConfigs>
+</LightningComponentBundle>
+

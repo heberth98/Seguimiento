@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Progreso de Tareas">
+        <div class="slds-var-p-around_medium">
+            <p>{porcentaje}% completado</p>
+            <!-- <p>ID del contacto: {recordId}</p> -->
+            <progress value={porcentaje} max="100" style="width: 100%; height: 20px;"></progress>
+        </div>
+    </lightning-card>
+</template>
